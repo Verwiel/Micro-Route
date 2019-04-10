@@ -51,8 +51,29 @@ npm run dev
 ```
 
 ## Adding Routes
-blah
-
+Modify export to
+```
+module.exports = router ()
+```
+Whithin your router function you need to add your route method:
+```
+get(path = String, handler = Function)
+```
+Example:
+```
+ get('/', (req, res) =>'hello world'),
+  get('/animals', (req, res) => ["Cat", "Dog", "Goat", "Cow", "Whale"])
+```
+## Getting it to work
+* Enter in terminal:
+```
+npm run dev
+```
+* open up postman
+* In url at the top enter localhost:3000
+* add your path as /animals
+* To the left of the address bar set button to get
+* hit the send button
 ## Links
 * [Micro Documentation](https://zeit.co/blog/micro-8)
 * [Micro-Router Documentation](https://github.com/pedronauck/micro-router)
