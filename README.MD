@@ -61,8 +61,8 @@ get(path = String, handler = Function)
 ```
 Example:
 ```
- get('/', (req, res) =>'hello world'),
-  get('/animals', (req, res) => ["Cat", "Dog", "Goat", "Cow", "Whale"])
+get('/', (req, res) =>'hello world'),
+get('/animals', (req, res) => ["Cat", "Dog", "Goat", "Cow", "Whale"])
 ```
 ## Getting it to work
 * Enter in terminal:
